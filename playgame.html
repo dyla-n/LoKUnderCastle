@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+	<!--- input info to send --->
+	<div>
+		<label for="playerID"> Player ID </label>
+		<input type="text" id="playerID" name="playerID"></input>
+
+		<label for="accessTokne"> AccessToken </label>	
+		<input type="text" id="accessTokne" name="accessTokne"></input>
+	</div>
+	
+	
+	<!--- CMINE Cords --->
+	<div>
+		
+		<label for="cmineC"> Continent </label>
+		<input type="text" id="cmineC" name="cmineC"></input>
+			
+		<label for="cmineX"> X </label>
+		<input type="text" id="cmineX" name="cmineX"></input>
+			
+		<label for="cmineY"> Y </label>
+		<input type="text" id="cmineY" name="cmineY"></input>
+		
+	
+	</div>
+	
+	
+	<!--- Gather/Monster --->
+	
+
+	<div>
+		<label for ="MarchType"> March Type </label>
+		<select name="MarchType" id="MarchType">
+			<option> </option>
+			<option value="1"> Gather Nodes/Pickup Charm</option>
+			<option value="5"> Monster Attack </option>
+		</select>
+	
+	</div>
+	
+	<!---- Troops to send --->
+	
+	<div>
+	
+		<label for ="trooptype"> Troop </label>
+		<select name="troopType" id="troopType">
+			<option> </option>
+			<option value="50100305"> T5 Calvary </option>
+			<option value="50100205"> T5 Archer </option>
+			<option value="50100105"> T5 Infantry </option>	
+			<option value="50100304"> T4 Calvary </option>
+			<option value="50100204"> T4 Archer </option>
+			<option value="50100104"> T4 Infantry </option>
+	<!--- Add other troops later --->
+		</select>
+
+		<label for="troopAMT"> Amount to send </label>
+		<input name="troopAMT" id="troopAMT"> </input>
+	
+	
+	</div>
+	
+	
+	<!--- Info Command Send then March command --->
+	
+	<div>
+	
+		<text> To ensure it looks legit as possible press the info button THEN the march button. Wait for the alert saying everything went well before moving on. </text>
+			
+			<div>
+				<div>
+				
+					<button id="sendInfo"> Info </button>
+					<script type="text/javascript" src="infosend.js"></script>
+					
+				</div>
+				<div>
+				
+					<button id="sendMarch"> March </button>
+					<script type="text/javascript" src="marchsend.js"></script>
+					
+				</div>
+			</div>
+	
+	</div>
+
+
+<body>
+
+</html>
